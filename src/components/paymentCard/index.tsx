@@ -38,13 +38,13 @@ const PaymentCard = ({
     const [transactionHash, setTransactionHash] = useState("")
 
     const openTwitter = () => {
-        window.open('https://twitter.com/payglide', '_blank');
+        window.open('https://twitter.com/FlowPay', '_blank');
     }
     const openDiscord = () => {
         window.open('https://discord.gg/Ff328bUvdN', '_blank');
     }
     const openWeb = () => {
-        window.open('https://payglide.xyz/', '_blank');
+        window.open('https://FlowPay.xyz/', '_blank');
     }
     const openLink = () => {
         window.open('https://testnet.floats.city/0xad6aa3b3eb3a0dd3/event/136396920', '_blank');
@@ -70,7 +70,7 @@ const PaymentCard = ({
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'payglide-api-key': process.env.NEXT_PUBLIC_API_KEY ?? "",
+                    'FlowPay-api-key': process.env.NEXT_PUBLIC_API_KEY ?? "",
                 },
                 body: JSON.stringify({
                     projectId: nft.id,
@@ -153,10 +153,10 @@ const PaymentCard = ({
                             <Image src="/uiIcons/celebrationIcon.png" alt="celebration" width={56} height={57} />
                         </div>
                         <div>
-                            <p className={styles.tryPayGlideTextCongratz} >Congratulations!</p>
+                            <p className={styles.tryFlowPayTextCongratz} >Congratulations!</p>
                         </div>
                     </div>
-                    <p className={styles.tryPayGlideDescription} style={{ textAlign: "center", width: "100%" }}>{`Your purchase is now in wallet ${paymentDetails?.session.recipient}`}</p>
+                    <p className={styles.tryFlowPayDescription} style={{ textAlign: "center", width: "100%" }}>{`Your purchase is now in wallet ${paymentDetails?.session.recipient}`}</p>
                     <div className={styles.imgCard}>
                         <Image
                             src={nft.image}
@@ -169,7 +169,7 @@ const PaymentCard = ({
                     <p className={styles.tryText}>{nft.name}</p>
                     <div className={styles.viewFlowScanSection} style={{ cursor: "pointer" }}>
                         <div style={{ marginRight: "1rem", height: "100%", paddingTop: 10 }}>
-                            <p className={styles.tryPayGlideDescription} style={{ marginTop: 0, fontWeight: 500 }}>View in flowscan here</p>
+                            <p className={styles.tryFlowPayDescription} style={{ marginTop: 0, fontWeight: 500 }}>View in flowscan here</p>
                         </div>
                         <div>
                             <Image src="/flowIconImage.png" style={{ cursor: "pointer" }} alt="flow" width={51} height={47} onClick={openYourTransaction} />
@@ -201,8 +201,8 @@ const PaymentCard = ({
                             />
                         </div>
                         <div className={styles.descriptionSection}>
-                            <p className={styles.tryPayGlideText}>{nft.name}</p>
-                            <p className={styles.tryPayGlideDescription}>{nft.description}</p>
+                            <p className={styles.tryFlowPayText}>{nft.name}</p>
+                            <p className={styles.tryFlowPayDescription}>{nft.description}</p>
                             <div className={styles.socialSection}>
                                 <Image
                                     src={"/socialIcons/floatIcon.png"}
@@ -255,7 +255,7 @@ const PaymentCard = ({
                                     <div className={styles.poweredSection}>
                                         <p className={styles.poweredText}>powered by </p>
                                         <Image src={"/flowIcon.png"} alt="" width={35} height={31} style={{ marginLeft: 5, marginRight: 5 }} />
-                                        <p className={styles.poweredText}> PayGlide</p>
+                                        <p className={styles.poweredText}> FlowPay</p>
                                     </div>
                                 </div>
                             )}

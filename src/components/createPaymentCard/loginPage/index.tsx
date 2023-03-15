@@ -25,7 +25,7 @@ const LoginPage = ({
                 height={120}
                 style={{ marginBottom: "2rem" }}
             />
-            <p className={styles.loginDescription}>Log in to PayGlide to continue</p>
+            <p className={styles.loginDescription}>Log in to FlowPay to continue</p>
             <CustomInput
                 value={email}
                 label={"Email Address"}

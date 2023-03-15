@@ -24,7 +24,7 @@ const FinalSection = ({
                     <Image src="/uiIcons/celebrationIcon.png" alt="celebration" width={56} height={57} />
                 </div>
                 <div>
-                    <p className={styles.tryPayGlideTextCongratz} >Congratulations !</p>
+                    <p className={styles.tryFlowPayTextCongratz} >Congratulations !</p>
                 </div>
             </div>
             <p className={styles.subTitle}>You’ve created your first checkout</p>

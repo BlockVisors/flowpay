@@ -84,7 +84,7 @@ const CreatePaymentCard = ({
                 </>
             )}
             {step === 6 && (
-                <FinalSection img={floatInfo.image} name={floatInfo.eventName} url={"www.payglide.xyz"} />
+                <FinalSection img={floatInfo.image} name={floatInfo.eventName} url={"www.FlowPay.xyz"} />
             )}
         </div>
     );

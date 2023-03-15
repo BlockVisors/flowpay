@@ -28,13 +28,13 @@ const PreviewSection = ({
     const width = useWindowSize().width;
 
     const openTwitter = () => {
-        window.open('https://twitter.com/payglide', '_blank');
+        window.open('https://twitter.com/FlowPay', '_blank');
     }
     const openDiscord = () => {
         window.open('https://discord.gg/Ff328bUvdN', '_blank');
     }
     const openWeb = () => {
-        window.open('https://payglide.xyz/', '_blank');
+        window.open('https://FlowPay.xyz/', '_blank');
     }
     const openLink = () => {
         window.open('https://testnet.floats.city/0xad6aa3b3eb3a0dd3/event/136396920', '_blank');
@@ -57,8 +57,8 @@ const PreviewSection = ({
                         )}
                     </div>
                     <div className={styles.descriptionSection}>
-                        <p className={styles.tryPayGlideText}>{nftPreview.name}</p>
-                        <p className={styles.tryPayGlideDescription}>{nftPreview.description}</p>
+                        <p className={styles.tryFlowPayText}>{nftPreview.name}</p>
+                        <p className={styles.tryFlowPayDescription}>{nftPreview.description}</p>
                         <div className={styles.socialSection}>
                             <Image
                                 src={"/socialIcons/floatIcon.png"}
@@ -94,7 +94,7 @@ const PreviewSection = ({
                     <div className={styles.poweredSection}>
                         <p className={styles.poweredText}>powered by </p>
                         <Image src={"/flowIcon.png"} alt="" width={35} height={31} style={{ marginLeft: 5, marginRight: 5 }} />
-                        <p className={styles.poweredText}> PayGlide</p>
+                        <p className={styles.poweredText}> FlowPay</p>
                     </div>
                 </div>
             </div>

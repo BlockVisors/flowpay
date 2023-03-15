@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>PayGlide Demo</title>
+        <title>FlowPay Demo</title>
         <meta name="description" content="Freedom of Payments" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
@@ -60,9 +60,10 @@ export default function Home() {
           <div className={styles.bgContainer}>
             <div className={styles.TitleSection}>
               <div className={styles.textContainer}>
-                <MainLogoIcon width={width < 551 ? 180 : 206} height={50} style={{ marginBottom: "3rem" }} />
+                {/* <MainLogoIcon width={width < 551 ? 180 : 206} height={50} style={{ marginBottom: "3rem" }} /> */}
+                <h1 className={styles.mainLogo}>FlowPay</h1>
                 <p className={styles.mainTitle}>FrEEDOM OF PayMENTS</p>
-                <p className={[styles.mainTitleDescription, styles.gradientText].join(" ")}>PayGlide enables direct fiat to NFT payments onFLOW blockchain</p>
+                <p className={[styles.mainTitleDescription, styles.gradientText].join(" ")}>FlowPay enables direct fiat to NFT payments onFLOW blockchain</p>
                 <div className={styles.btnContainer}>
                   <div className={styles.firstHomeBtn}>
                     <Button
@@ -100,7 +101,7 @@ export default function Home() {
                   <div style={{ marginRight: 50, display: "flex", flexDirection: "row" }}>
                     <p className={[styles.bottomSectionTitle, styles.gradientText].join(" ")}  >Made with </p>
                     <HeartIcon width={19} height={19} style={{ margin: "0 1rem" }} />
-                    <p className={[styles.bottomSectionTitle, styles.gradientText].join(" ")}  >by PayGlide</p>
+                    <p className={[styles.bottomSectionTitle, styles.gradientText].join(" ")}  >by FlowPay</p>
                   </div>
                   <div style={{ marginRight: 50 }}>
                     <p className={styles.bottomSectionTitle}>Privacy Policy</p>
@@ -123,7 +124,7 @@ export default function Home() {
                         <p className={styles.bottomSectionTitle}>Privacy Policy</p>
                       </div>
                       <div>
-                        <p className={styles.bottomSectionTitle}>PayGlide © 2022</p>
+                        <p className={styles.bottomSectionTitle}>FlowPay © 2022</p>
                       </div>
                     </div>
                   )}
@@ -167,9 +168,9 @@ export default function Home() {
                 {width < 551 && (
                   <div className={styles.bottomSection} style={{ flexDirection: "column", alignItems: "center" }}>
                     <div style={{ display: "flex", flexDirection: "row", alignItems: "center" }}>
-                      <p className={[styles.bottomSectionTitle, styles.gradientText].join(" ")}  >Made with </p>
+                      <p className={[styles.bottomSectionTitle, styles.gradientText].join(" ")}  >FlowPay </p>
                       <HeartIcon width={19} height={19} style={{ margin: "0 1rem" }} />
-                      <p className={[styles.bottomSectionTitle, styles.gradientText].join(" ")}  >by PayGlide</p>
+                      <p className={[styles.bottomSectionTitle, styles.gradientText].join(" ")}  >by FlowPay & Block 21</p>
                     </div>
                     <div>
                       <p className={styles.bottomSectionTitle}>Privacy Policy</p>

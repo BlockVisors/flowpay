@@ -26,6 +26,14 @@
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
+.mainLogo{
+  font-family: "NeueMontreal";
+  font-weight: 600;
+  font-size: 28px;
+  color: white;
+  margin-bottom: 4rem;
+  letter-spacing: 0.1rem;
+}
 
 .animatedIcon {
   -webkit-animation: mover 1.5s infinite alternate;
