@@ -1,0 +1,310 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  /* min-width: 100vh; */
+  min-height: 100%;
+  background: linear-gradient(
+    151.67deg,
+    #bf3ddb -26.8%,
+    #36113e 24.26%,
+    #000000 82.49%
+  );
+}
+
+.mainTitle {
+  font-family: "groupeMedium";
+  font-size: 64px;
+  color: white;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.animatedIcon {
+  -webkit-animation: mover 1.5s infinite alternate;
+  animation: mover 1.5s infinite alternate;
+  transform: rotate(-30deg);
+  margin-left: 10rem;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+.bgContainer {
+  background-image: url("/bgDesign.png");
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.TitleSection {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: start;
+  padding: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.paymentSection {
+  min-width: 40%;
+  padding: 1.5rem;
+
+  background-color: #d9d9d9;
+  min-height: 100%;
+  border-radius: 110px 0px 0px 110px;
+  box-shadow: 0px 4px 55px #450753;
+}
+.paymentCardSection {
+  width: 40%;
+  padding: 2% 3%;
+  max-height: 100vh;
+  border-radius: 110px 0px 0px 110px;
+  box-shadow: 0px 4px 55px #450753;
+  background-color: black;
+}
+
+.scrollContainer {
+  width: 100%;
+  height: 90%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 50px;
+}
+
+.scrollContainer::-webkit-scrollbar {
+  width: 12px;
+}
+
+.scrollContainer::-webkit-scrollbar-track {
+  background: #424242;
+  border-radius: 24px;
+}
+
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: linear-gradient(0deg, #000000 0%, #bf3ddb 119.45%);
+  border-radius: 29px;
+}
+
+.firstHomeBtn {
+  margin-right: 2rem;
+}
+
+.bottomSectionTitle {
+  color: white;
+  cursor: pointer;
+}
+
+.gradientText {
+  background-image: linear-gradient(90deg, #bf3ddb 0%, #0cb6ec 143.48%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tryNowTitle {
+  font-family: "NeueMontreal";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  color: black;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tryNowDescription {
+  font-family: "NeueMontreal";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.stepText {
+  width: 100%;
+  font-family: "NeueMontreal";
+  font-weight: 600;
+  font-size: 26px;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  color: white;
+  margin: 2.5rem 0;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.mainTitleDescription {
+  font-family: "NeueMontreal";
+  font-weight: 400;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 4rem;
+  letter-spacing: 0.1rem;
+}
+
+.demoText {
+  font-family: "NeueMontreal";
+  font-weight: 600;
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.bottomSectionBtn {
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottomSection {
+  display: flex;
+  color: black;
+  justify-content: center;
+  font-family: "NeueMontreal";
+}
+
+@media screen and (max-width: 1510px) {
+  .TitleSection {
+    width: 60%;
+  }
+  .paymentCardSection {
+    width: 40%;
+    padding: 6% 3%;
+  }
+  .mainTitle {
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+  .mainTitleDescription {
+    font-size: 22px;
+    margin-bottom: 2rem;
+  }
+  .animatedIcon {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+  .bgContainer {
+    flex-direction: column;
+  }
+  .animatedIcon {
+    margin-left: 5rem;
+  }
+  .TitleSection {
+    width: 100%;
+    min-height: 100vh;
+    padding: 1rem;
+  }
+  .paymentCardSection {
+    width: 100%;
+    /* height: 100%; */
+    height: 100vh;
+    overflow-y: inherit;
+    overflow-x: hidden;
+    border-radius: 110px;
+  }
+  .scrollContainer {
+    overflow-y: inherit;
+    overflow-x: hidden;
+  }
+  .mainTitle {
+    text-align: center;
+    font-size: 40px !important;
+  }
+  .mainTitleDescription {
+    text-align: center;
+  }
+  .btnContainer {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .btnContainer {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .animatedIcon {
+    margin-left: 0rem;
+  }
+  .firstHomeBtn {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .TitleSection {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+  }
+
+  .mainTitle {
+    text-align: center;
+    font-size: 50px !important;
+  }
+
+  .mainTitleDescription {
+    font-size: 19px !important;
+  }
+
+  .paymentCardSection {
+    width: 100%;
+    /* height: 100%; */
+    /* height: 100vh; */
+    height: fit-content;
+    overflow-y: unset;
+    overflow-x: hidden;
+    border-radius: 50px;
+  }
+
+  .scrollContainer {
+    height: fit-content;
+  }
+  .bottomSectionTitle {
+    color: white;
+    margin: 1rem 0;
+  }
+  .textContainer {
+    padding-left: 0;
+  }
+}

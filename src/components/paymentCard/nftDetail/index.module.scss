@@ -1,0 +1,69 @@
+.card {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 0.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.quantityRemaining {
+  font-family: "NeueMontreal";
+  font-weight: 700;
+  font-size: 20px;
+  color: black;
+  margin-bottom: 0.3rem;
+}
+
+.labelValueSection {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0.5rem 0;
+  align-items: center;
+}
+
+.labelText {
+  font-family: "NeueMontreal";
+  font-weight: 400;
+  font-size: 18px;
+  color: #424242;
+}
+
+.labelValue {
+  font-family: "NeueMontreal";
+  font-weight: 600;
+  font-size: 18px;
+  color: black;
+}
+
+.quantityInput {
+  width: 100px;
+  height: 40px;
+  background-color: #d9d9d9;
+  align-items: center;
+  padding-left: 1rem;
+  font-family: "NeueMontreal";
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+  border-radius: 20px;
+  text-align: center;
+  border: none;
+  position: relative;
+}
+
+.quantityInput:hover::before {
+  content: attr(title);
+  display: block;
+  position: absolute;
+  font-family: "NeueMontreal";
+  top: -1.5em;
+  left: 0%;
+  transform: translateX(-50%);
+  padding: 0.2em 0.5em;
+  background-color: black;
+  color: #fff;
+  border-radius: 0.5em;
+  font-size: 0.8em;
+  white-space: nowrap;
+}
